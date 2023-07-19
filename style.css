@@ -18,7 +18,7 @@ ul li{
 }
 
 main{
-    padding: 80px 110px;
+    padding: 80px 70px;
 }
 img{
     width: 100%;
@@ -67,7 +67,7 @@ img{
 /* navbar style */
 
 header{
-    padding: 0 150px;
+    padding: 0 80px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -186,8 +186,33 @@ header{
     margin-top: 20px;
 }
 
-
-
+/* category style */
+.category-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 427px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.category-item{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+.category-item img{
+    width: 40px;
+    height: 40px;
+}
+.category-item span{
+    color: #0B0223;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 8px;
+}
 /* ===================   responsive styles =====================*/
 
 /* for small devices */
@@ -195,11 +220,11 @@ header{
 @media screen and (max-width: 576px) {
 
     main{
-        padding: 60px 40px;
+        padding: 60px 3%;
     }
 
     header{
-        padding: 30px 40px;
+        padding: 30px 3%;
         box-shadow: none;
     }
 
@@ -239,6 +264,27 @@ header{
 
     .game-box{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .game-box .box{
+        margin-bottom: 40px;
+    }
+
+    .category-container{
+        min-height: 250px;
+    }
+    .category-item{
+        margin-top: 20px;
+        padding: 8px 10px;
+    }
+    .category-item img{
+        width: 15px;
+        height: 15px;
+    }
+    .category-item span{
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 4px;
     }
 }
 
