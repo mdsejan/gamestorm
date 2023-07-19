@@ -8,9 +8,6 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
-body{
-    max-width: 1400px;
-}
 
 a{
     text-decoration: none;
@@ -21,7 +18,7 @@ ul li{
 }
 
 main{
-    padding: 80px 150px;
+    padding: 80px 110px;
 }
 img{
     width: 100%;
@@ -49,7 +46,23 @@ img{
 .primary-color{
     color: #FF42A5;
 }
+.secondary-color{
+    color: #0B0223;
+}
 
+.title{
+    font-size: 3rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: #F948B2;
+}
+
+.description{
+    color: #534C64;
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+}
 
 /* navbar style */
 
@@ -107,6 +120,7 @@ header{
 }
 
 /* banner style */
+
 .banner-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -134,6 +148,7 @@ header{
     margin-right: 15px;
 }
 
+
 .list{
     margin-left: 10px;
     margin-top: 30px;
@@ -149,3 +164,84 @@ header{
 .list ul li i{
     margin-right: 8px;
 }
+
+/* Online games style */
+
+.onlinegames-container{
+    padding: 80px 0 40px 0;
+}
+
+.heading-box{
+    text-align: center;
+}
+
+.game-box{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.box p{
+    margin-top: 20px;
+}
+
+
+
+/* ===================   responsive styles =====================*/
+
+/* for small devices */
+
+@media screen and (max-width: 576px) {
+
+    main{
+        padding: 60px 40px;
+    }
+
+    header{
+        padding: 30px 40px;
+        box-shadow: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .menus ul{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .menus ul li a{
+        display: inline-block;
+        margin: 0 0 20px 0;
+    }
+
+    .btn-nav{
+        margin-top: 20px;
+    }
+
+    .banner-container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .banner-content{
+        order: 2;
+        padding: 3%;
+    }
+
+    .banner-img{
+        order: 1;
+        margin-bottom: 80px;
+    }
+
+    .game-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+    
+
+    
