@@ -17,15 +17,19 @@ ul li{
     list-style-type: none;
 }
 
-main{
+/* main{
     padding: 80px 70px;
-}
+} */
 img{
     width: 100%;
 }
 
 
 /* Shared style */
+
+.container{
+    padding: 80px 70px;
+}
 
 .btn{
     padding: 15px 30px;
@@ -167,9 +171,6 @@ header{
 
 /* Online games style */
 
-.onlinegames-container{
-    padding: 80px 0 40px 0;
-}
 
 .heading-box{
     text-align: center;
@@ -182,18 +183,21 @@ header{
     gap: 10px;
 }
 
+
 .box p{
     margin-top: 20px;
 }
 
 /* category style */
+.category{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
 .category-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    min-height: 427px;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    min-height: 280px;
 }
 .category-item{
     margin-top: 20px;
@@ -202,6 +206,11 @@ header{
     background: #FFF;
     display: flex;
     align-items: center;
+}
+
+.category-item:hover{
+    border: 2px solid #FF42A5;
+    cursor: pointer;
 }
 .category-item img{
     width: 40px;
@@ -213,13 +222,102 @@ header{
     font-weight: 600;
     margin-left: 8px;
 }
+
+/* footer style */
+
+.footer{
+    min-height: 436px;
+    background: #0B0223;
+}
+
+.flogo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flogo-box img{
+    width: 40px;
+}
+.flogo-box h1{
+    margin-left: 5px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+.footer-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-menu ul li{
+    margin-top: 20px;
+}
+
+.footer-menu ul li a{
+    color: #fff;
+    margin-right: 40px;
+}
+
+.social{
+    margin-top: 60px;
+}
+
+.social ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+.social ul li a i{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+/* footer bootom */
+
+.footer-bottom{
+    padding-top: 60px;
+}
+
+.quick-links ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quick-links ul li{
+    margin-top: 20px;
+}
+
+.quick-links ul li a{
+    color: rgba(255, 255, 255, 0.60);
+    margin-right: 40px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+
+
+
+
 /* ===================   responsive styles =====================*/
 
 /* for small devices */
 
 @media screen and (max-width: 576px) {
 
-    main{
+    .container{
         padding: 60px 3%;
     }
 
@@ -286,6 +384,8 @@ header{
         font-weight: 600;
         margin-left: 4px;
     }
+
+
 }
 
     
