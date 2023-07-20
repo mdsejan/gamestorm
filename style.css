@@ -51,6 +51,14 @@ img{
     background: #4EC5F7;
 }
 
+.btn-white{
+    background: #fff;
+    color: #FF42A5;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 .primary-color{
     color: #FF42A5;
 }
@@ -580,6 +588,10 @@ header{
 
     .container{
         padding: 60px 3%;
+    }
+
+    .list-box .btn{
+        width: 90%;
     }
 
     header{
